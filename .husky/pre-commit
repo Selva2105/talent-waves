@@ -1,0 +1,4 @@
+if [ -f "$1" ]; then
+  npx --no -- commitlint --edit $1
+fi
+npm run check-types && npm run lint
